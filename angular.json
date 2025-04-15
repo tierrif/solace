@@ -97,6 +97,39 @@
           }
         }
       }
+    },
+    "spectra": {
+      "projectType": "library",
+      "root": "projects/spectra",
+      "sourceRoot": "projects/spectra/src",
+      "prefix": "sp",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/spectra/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/spectra/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/spectra/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/spectra/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
