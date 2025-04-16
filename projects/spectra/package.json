@@ -5,6 +5,11 @@
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"
   },
+  "exports": {
+    "./global": {
+      "sass": "./src/_index.scss"
+    }
+  },
   "dependencies": {
     "tslib": "^2.3.0"
   },

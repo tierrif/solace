@@ -1,0 +1,9 @@
+@use './index.scss';
+
+// Dark theme specifics
+:root {
+  --sp-background: #403955;
+  --sp-title-font-color: #f0f0f0;
+  --sp-font-color: #b4b3bb;
+  --sp-primary-font-color: #403955;
+}

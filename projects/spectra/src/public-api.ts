@@ -2,5 +2,9 @@
  * Public API Surface of spectra
  */
 
-export * from './lib/spectra.service';
-export * from './lib/spectra.component';
+// Common
+export * from './lib/common/types';
+
+// Button
+export { SpButtonModule } from './lib/button/button.module';
+export { SpButtonComponent } from './lib/button/button.component';
